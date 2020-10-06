@@ -94,7 +94,7 @@ public class Start {
             return 0;
         }
         int middle = (length - 1) / 2;
-        if ((choice > moreThen && choice - middle >= moreThen) || choice + middle < moreThen ) {
+        if ((choice > moreThen && moreThen >= choice - middle) || choice + middle < moreThen ) {
             return 1;
         }
         return -1;
